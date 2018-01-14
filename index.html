@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Coffee Quiz</title>
+    <meta name='description' content='Quiz about coffee.'>
+    <link href='index.css' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet'>
+  </head>
+  
+<body>
+  <main role='main'>
+    <section id='start-page' class='blackbox'>
+      <div id='title'>
+      <h1>You don't know beans about coffee...</h1>
+      <img class='espresso' src='http://theblackcabcoffeeco.com/wp-content/uploads/2017/02/espresso.jpg' alt='espresso shot with spoon'>
+      <h3 class='start-text'>Test your coffee knowledge with this fun interactive quiz.<br>Click the button below to begin!</h3>
+      </div>
+      <button class='button'>Take a shot!</button>
+    </section>
+    
+    <section id='question-page' class='hidden blackbox'>
+      <form  id='coffee-form' method='get'>
+      <fieldset name='question-set'>
+        <div id='quiz-question' class='coffee-question'></div>
+        <div class='coffee-answers' role='radiogroup'></div>
+        <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Am I right?</button>
+      </fieldset>
+      </form>
+      <button id='next-question' class='button hidden' type='submit'>Next</button>
+      <div id='feedbackcorrect' class='all-feedback hidden'>
+      <h3>Correct! You sure know a latte about coffee!</h3><br>
+      <img class='happy-coffee' src='http://blog.mycoffeesupply.com/wp-content/uploads/2013/07/happy_coffee.jpg' alt='happy cup of coffee'></div>
+      <div id='feedbackincorrect' class='hidden'><br></div>
+      <img class='sad-coffee hidden' src='http://www.sbs.com.au/topics/sites/sbs.com.au.topics/files/sad_coffee_0.jpg' alt='sad cup of coffee'>
+      <div class='results-counter'></div>
+      </section>
+    
+    <section id='final-page' class='hidden blackbox'>
+      <h1>How did you brew?</h1>
+      <div id='final-correct'><br></div>
+      <div>
+      <img class='many-cups' src='http://louisianaroastingcompany.com/files/bigstock/2017/09/Lots-of-coffee-cups-on-wooden-177230398.jpg' alt='many cups of coffee'/><br>
+      <p class='craving'>Craving another cup? Click the button below to take the quiz again.</p></div>
+      <button id='retake' type='submit'>Take another shot!</button>
+    </section>
+    
+  </main>  
+    <script src='//code.jquery.com/jquery.min.js'></script>
+    <script src='index.js'></script>
+  </body>
+</html>
