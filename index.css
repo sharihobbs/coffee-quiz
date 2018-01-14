@@ -1,0 +1,120 @@
+body * {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Bitter', serif;
+  color: white;
+  background: url(https://static.pexels.com/photos/9186/food-beans-coffee-drink.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.blackbox {
+  width: 90%;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.espresso {
+  height: auto;
+  width: 50%;
+}
+
+legend {
+  font-size: 24px;
+}
+
+fieldset {
+  border: none;
+}
+
+.button {
+  height: 35px;
+  width: 120px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Bitter', serif;
+}
+
+.coffee-question {
+  padding-left: 50px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.coffee-answers {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.button.disabled {
+  opacity: 0.50; 
+  cursor: not-allowed;
+}
+
+.results-counter {
+  font-size: 20px;
+  text-align: center;
+}
+
+.all-feedback {
+  font-size: 18px;
+  margin-top: 10px;
+  position: relative;
+  line-height: 150%;
+}
+
+.happy-coffee {
+  height: auto;
+  width: 35%;
+  margin-top: -15px;
+}
+
+.sad-coffee {
+  height: auto;
+  width: 30%;
+  margin-top: -25px;
+}
+
+#final-correct {
+  margin-top: -30px;
+}
+
+.many-cups {
+  height: auto;
+  width: 40%;
+}
+
+.craving {
+  font-size: 18px;
+}
+
+#retake {
+  height: 35px;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Bitter', serif;
+}
+
