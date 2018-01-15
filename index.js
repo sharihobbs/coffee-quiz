@@ -70,10 +70,10 @@ function renderQuestions() {
   const answer4 = `${coffeeArray[currentQ].answerOptions[3]}`;
   const questionText = `<legend>${currentQ+1}/10: ${coffeeArray[currentQ].question}<legend>`;
   const answersText = 
-  `<input type='radio' name='option' class='radio-buttons' id='answer1' value='${answer1}'><label for='answer1'>${answer1}</label><br>
-  <input type='radio' name='option' class='radio-buttons' id='answer2' value='${answer2}'><label for='answer2'>${answer2}</label><br>
-  <input type='radio' name='option' class='radio-buttons' id='answer3' value='${answer3}'><label for='answer3'>${answer3}</label><br>
-  <input type='radio' name='option' class='radio-buttons' id='answer4' value='${answer4}'><label for='answer4'>${answer4}</label><br>`;
+  `<input type='radio' role='radio' aria-checked='false' name='option' class='radio-buttons' id='answer1' value='${answer1}'><label for='answer1'>${answer1}</label><br>
+  <input type='radio' role='radio' aria-checked='false' name='option' class='radio-buttons' id='answer2' value='${answer2}'><label for='answer2'>${answer2}</label><br>
+  <input type='radio' role='radio' aria-checked='false' name='option' class='radio-buttons' id='answer3' value='${answer3}'><label for='answer3'>${answer3}</label><br>
+  <input type='radio' role='radio' aria-checked='false' name='option' class='radio-buttons' id='answer4' value='${answer4}'><label for='answer4'>${answer4}</label><br>`;
   $('.coffee-question').html(questionText);
   $('.coffee-answers').html(answersText);
   enableSubmitButton();
