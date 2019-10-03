@@ -118,3 +118,6 @@ fieldset {
   font-family: 'Bitter', serif;
 }
 
+.pointerCursor {
+  cursor: pointer;
+}
